@@ -4,9 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## How to run it
 
-### `npm install`
-### `npm run build`
-### `npm start`
+- `npm install`
+- `npm start`
+
+UI URL: `http://localhost:3000/`
 
 ## Frontend training features
 
