@@ -18,6 +18,7 @@ UI URL: `http://localhost:3000/`
 - React.memo, useMemo, useCallback
 - useReducer
 - Router + useHistory
+- useContext
 - Redux
 - SCSS: media queries, flex and grid
 - testing: Jest
