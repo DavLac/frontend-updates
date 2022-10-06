@@ -15,7 +15,6 @@ UI URL: `http://localhost:3000/`
 - useEffect: load API call at runtime
 - useState, submit form, API call with placeholder
 - React.memo, useMemo, useCallback
-- React.memo, useMemo, useCallback
 - useReducer
 - Router + useHistory
 - useContext
