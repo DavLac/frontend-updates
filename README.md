@@ -22,3 +22,4 @@ UI URL: `http://localhost:3000/`
 - SCSS: media queries, flex and grid
 - testing: Jest
 - testing: Cypress
+- Micro frontend - webpack module federation
