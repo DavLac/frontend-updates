@@ -4,10 +4,19 @@ import { Section } from "../../element/section/Section";
 import GenderizeApiGateway from './http/GenderizeApiGateway';
 import Skeleton from '@mui/material/Skeleton';
 
-const objectResponseToJsxList = (dataObject) => {
+class GenderResponse {
+  constructor(data) {
+    this.count = data.count;
+    this.gender = data.gender;
+    this.name = data.name;
+    this.probability = data.probability;
+  }
+};
+
+const objectResponseToJsxList = (genderResponse) => {
   let rows = [];
   let index = 0;
-  for(const [key, value] of Object.entries(dataObject)) {
+  for(const [key, value] of Object.entries(genderResponse)) {
     rows.push(<li key={index}>{key} : {value}</li>);
     index++;
   }
@@ -39,13 +48,14 @@ export const FormApiCall = () => {
     e.preventDefault();
     setGenderResponse(generatePlaceholder());
     GenderizeApiGateway.getGenderByName(nameInputRef.current.value)
-    .then(response => setGenderResponse(objectResponseToJsxList(response.data)))
+    .then(response => setGenderResponse(
+      objectResponseToJsxList(new GenderResponse(response.data))))
     .catch(error => setGenderResponse(JSON.stringify(error)))
   }
 
   return (
     <Section 
-    title="useState - submit form - Api call with placeholder" 
+    title="useState, useRef - submit form - Api call with placeholder - map response with a class" 
     background='dark' 
     description='Fetch and display GET api call (Axios) with placeholder
     + submit form (prevent default page refresh on submit click)

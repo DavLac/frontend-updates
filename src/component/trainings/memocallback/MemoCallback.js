@@ -13,7 +13,7 @@ export const MemoCallback = () => {
   return (
     <Section 
       title="React.memo, useCallBack and useMemo" 
-      background='light' 
+      background='dark' 
       description='React.memo, useCallBack and useMemo'
     >
     <button type="button" onClick={onClickHandler}>Generate callback data</button>

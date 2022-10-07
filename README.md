@@ -13,7 +13,7 @@ UI URL: `http://localhost:3000/`
 
 - useState: react to a button
 - useEffect: load API call at runtime
-- useState, submit form, API call with placeholder
+- useState, submit form, API call with placeholder, map response with a class
 - React.memo, useMemo, useCallback
 - useReducer: manage big forms
 - Router + useHistory

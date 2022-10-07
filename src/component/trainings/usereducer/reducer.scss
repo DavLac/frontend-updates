@@ -1,0 +1,14 @@
+.form--flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+
+    .form_child {
+      margin: 10px;
+      padding: 5px;
+      background-color: lightseagreen;
+    }
+}
