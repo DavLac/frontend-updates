@@ -1,6 +1,9 @@
 @charset "utf-8";
 
+@import "../../node_modules/bulma/bulma.sass";
+
 @import "base/base";
 
 @import "../component/element/section/section";
 @import "../component/trainings/usereducer/reducer";
+@import "../component/trainings/responsive/responsive";

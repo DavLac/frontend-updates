@@ -7,9 +7,11 @@ import { LoadApiAtRuntime } from "../loadapiatruntime/LoadApiAtRuntime";
 import { FormApiCall } from "../callapiwithparam/FormApiCall";
 import { UseReducerForm } from "../usereducer/UseReducerForm";
 import { MemoCallback } from "../memocallback/MemoCallback";
+import { RouterSection } from "../router/RouterSection";
+import { Responsive } from "../responsive/Responsive";
 
 const routeMain = () =>
-    <Route path={'/trainings'} exact  element={
+    <Route path={'/trainings'} exact element={
         <>
             <Title />
             <UseState />
@@ -17,6 +19,8 @@ const routeMain = () =>
             <FormApiCall />
             <UseReducerForm />
             <MemoCallback />
+            <RouterSection />
+            <Responsive />
         </>
     } />
 

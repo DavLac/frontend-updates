@@ -19,7 +19,7 @@ UI URL: `http://localhost:3000/`
 - Router + useHistory
 - useContext
 - Redux
-- SCSS: media queries, flex and grid
+- Responsive CSS: media queries, flex and grid
 - testing: Jest
 - testing: Cypress
 - Micro frontend - webpack module federation
