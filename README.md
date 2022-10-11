@@ -11,6 +11,7 @@ UI URL: `http://localhost:3000/`
 
 ## Frontend training features
 
+- last ES6 features
 - useState: react to a button
 - useEffect: load API call at runtime
 - useState, submit form, API call with placeholder, map response with a class
