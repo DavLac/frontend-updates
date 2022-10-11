@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import { Section } from "../../element/section/Section";
 import { FormChild } from './FormChild';
 
-export const UseReducerForm = () => {
+export const UseReducerForm = (props) => {
 
   const [formValues, setFormValues] = useState();
   //const [state, dispatch] = useReducer(reducer, initialFormState);
@@ -38,7 +38,7 @@ export const UseReducerForm = () => {
   return (
     <Section 
     title="useReducer form with main input types - BEM CSS - flex" 
-    background='light' 
+    background={props.color}
     description='Get big form with most common input types and display them + using BEM CSS with flex'>
       <form onSubmit={onSubmitHandler} className='form--flex'>
         <FormChild>

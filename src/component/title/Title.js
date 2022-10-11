@@ -1,16 +1,16 @@
-
 import React from 'react';
 import { Section } from "../element/section/Section";
 
 export const Title = () => {
   return (
     <Section background='light'>
-      <h1 class="title">React training</h1>
+      <h1 className="title, h1-main">Frontend training</h1>
       <h2 class="subtitle">Summary</h2>
 
-      <span>Overall training progress : 5 ok, 2 in progress on 12 ~ 50%</span>
-      <progress class="progress is-success" value="6" max="12" style={{width: "400px", border: "1px black solid"}}>50%</progress>
+      <span>Overall training progress : 6 ok, 2 in progress on 13</span>
+      <progress class="progress is-success" value="7" max="12" style={{width: "400px", border: "1px black solid"}}></progress>
       <ul>
+        <li style={{color: "green"}}>ES6 features</li>
         <li style={{color: "green"}}>useState: react to a button</li>
         <li style={{color: "green"}}>useEffect: load API call at runtime</li>
         <li style={{color: "green"}}>useState, submit form, API call with placeholder, map response with a class</li>

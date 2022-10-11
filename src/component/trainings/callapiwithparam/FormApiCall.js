@@ -34,7 +34,7 @@ const generatePlaceholder = () => {
           </ul>;
 }
 
-export const FormApiCall = () => {
+export const FormApiCall = (props) => {
 
   const [genderResponse, setGenderResponse] = useState();
   const [formValid, setFormValid] = useState(false);
@@ -56,7 +56,7 @@ export const FormApiCall = () => {
   return (
     <Section 
     title="useState, useRef - submit form - Api call with placeholder - map response with a class" 
-    background='dark' 
+    background={props.color}
     description='Fetch and display GET api call (Axios) with placeholder
     + submit form (prevent default page refresh on submit click)
     + disable button based on input onChange'

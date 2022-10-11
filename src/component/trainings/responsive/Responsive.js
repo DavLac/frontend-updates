@@ -2,9 +2,9 @@
 import React from 'react';
 import { Section } from "../../element/section/Section";
 
-export const Responsive = () => {
+export const Responsive = (props) => {
   return (
-    <Section title="Responsive CSS" background='black' description='Madia queries with images, flex and grid CSS'>
+    <Section title="Responsive CSS" background={props.color} description='Madia queries with images, flex and grid CSS'>
       <h4>Media query : image size change with screen width size</h4>
       <div className='media-query'></div>
 

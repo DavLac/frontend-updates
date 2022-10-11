@@ -9,18 +9,20 @@ import { UseReducerForm } from "../usereducer/UseReducerForm";
 import { MemoCallback } from "../memocallback/MemoCallback";
 import { RouterSection } from "../router/RouterSection";
 import { Responsive } from "../responsive/Responsive";
-
+import { ES6 } from "../es6/ES6";
 const routeMain = () =>
     <Route path={'/trainings'} exact element={
         <>
             <Title />
-            <UseState />
-            <LoadApiAtRuntime />
-            <FormApiCall />
-            <UseReducerForm />
-            <MemoCallback />
-            <RouterSection />
-            <Responsive />
+            
+            <ES6 color="dark"/>
+            <UseState color="light" />
+            <LoadApiAtRuntime color="dark" />
+            <FormApiCall color="light" />
+            <UseReducerForm color="dark" />
+            <MemoCallback color="light" />
+            <RouterSection color="dark" />
+            <Responsive color="light" />
         </>
     } />
 

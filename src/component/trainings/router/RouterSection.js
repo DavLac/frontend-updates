@@ -3,7 +3,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Section } from "../../element/section/Section";
 
-export const RouterSection = () => {
+export const RouterSection = (props) => {
   const navigate = useNavigate();
 
   const onClickHandler = () => {
@@ -11,7 +11,7 @@ export const RouterSection = () => {
   }
 
   return (
-    <Section title="Router pages" background='light' description='Change page/route + handle Page not found'>
+    <Section title="Router pages" background={props.color} description='Change page/route + handle Page not found'>
       <button type="button" onClick={onClickHandler}>
         Go to "Not found page"
       </button>

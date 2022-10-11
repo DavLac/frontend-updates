@@ -13,7 +13,7 @@ const objectResponseToJsxList = (dataObject) => {
   return <ul>{rows}</ul>;
 }
 
-export const LoadApiAtRuntime = () => {
+export const LoadApiAtRuntime = (props) => {
   const [updateActivity, setUpdateActivity] = useState(0);
   const [activity, setActivity] = useState();
 
@@ -31,7 +31,7 @@ export const LoadApiAtRuntime = () => {
   return (
     <Section 
       title="useEffect/Load Api at runtime" 
-      background='light' 
+      background={props.color}
       description='Fetch and display GET api call (Axios) after 1st render + onClick 
       + read an object with for..in loop 
       + manage useEffect infinite loop'

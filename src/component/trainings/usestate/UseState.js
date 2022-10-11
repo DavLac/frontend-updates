@@ -10,7 +10,7 @@ const titleStyleNotValid = {
   color: 'red'
 }
 
-export const UseState = () => {
+export const UseState = (props) => {
 
   const [isValid, setIsValid] = useState(true);
   let titleStyle = (isValid === true) ? titleStyleValid : titleStyleNotValid;
@@ -21,7 +21,7 @@ export const UseState = () => {
   }
 
   return (
-    <Section title="useState" background='dark' description='Change component state on button click'>
+    <Section title="useState" background={props.color} description='Change component state on button click'>
       <p style={titleStyle}>
         Hello world ({isValid ? 'isValid' : 'isNotValid'})
       </p>
