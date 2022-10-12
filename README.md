@@ -9,6 +9,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 UI URL: `http://localhost:3000/`
 
+## How to test it
+
+- `npm test`
+- `npm run cy run` (npx cypress run) : run tests without browser
+- `npm run cy open` (npx cypress open) : open cypress in a browser
+
 ## Frontend training features
 
 - last ES6 features
@@ -23,4 +29,3 @@ UI URL: `http://localhost:3000/`
 - Responsive CSS: media queries, flex and grid
 - testing: Jest
 - testing: Cypress
-- Micro frontend - webpack module federation
