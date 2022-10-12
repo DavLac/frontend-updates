@@ -18,7 +18,11 @@ export const UseContext = (props) => {
   }
 
   return (
-    <Section title="useContext" background={props.color} description='Use context for global state'>
+    <Section 
+      title="useContext" 
+      anchor="context-anchor"
+      background={props.color} 
+      description='Use context for global state'>
       <UserContext.Provider value={{
             ctxIncrement: number,
             ctxIncrement2: number2

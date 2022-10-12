@@ -17,8 +17,9 @@ UI URL: `http://localhost:3000/`
 
 ## Frontend training features
 
-- last ES6 features
+- Last ES6 features
 - useState: react to a button
+- Cross component state - child to parent
 - useEffect: load API call at runtime
 - useState, submit form, API call with placeholder, map response with a class
 - React.memo, useMemo, useCallback
@@ -27,5 +28,5 @@ UI URL: `http://localhost:3000/`
 - useContext
 - Redux
 - Responsive CSS: media queries, flex and grid
-- testing: Jest
-- testing: Cypress
+- Testing: Jest
+- Testing: Cypress

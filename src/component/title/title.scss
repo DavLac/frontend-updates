@@ -3,3 +3,14 @@
   margin-bottom: 50px;
   padding-bottom: 10px;
 }
+
+li {
+  a:visited, a:link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    color: blue;
+  }
+}

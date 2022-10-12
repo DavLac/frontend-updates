@@ -55,12 +55,13 @@ export const FormApiCall = (props) => {
 
   return (
     <Section 
-    title="useState, useRef - submit form - Api call with placeholder - map response with a class" 
-    background={props.color}
-    description='Fetch and display GET api call (Axios) with placeholder
-    + submit form (prevent default page refresh on submit click)
-    + disable button based on input onChange'
-    >
+      title="useState, useRef - submit form - Api call with placeholder - map response with a class" 
+      anchor="api-anchor"
+      background={props.color}
+      description='Fetch and display GET api call (Axios) with placeholder
+      + submit form (prevent default page refresh on submit click)
+      + disable button based on input onChange'
+      >
       <p>Predict the gender of a person based on their name</p>
       <form onSubmit={onSubmitHandler}>
         <label>Name</label>

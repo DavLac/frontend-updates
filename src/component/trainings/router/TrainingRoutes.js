@@ -4,6 +4,7 @@ import { NotFound } from "./NotFound";
 import { Title } from "../../title/Title";
 import { ES6 } from "../es6/ES6";
 import { UseState } from "../usestate/UseState";
+import { CrossComponentState } from "../crosscomponentstate/CrossComponentState";
 import { LoadApiAtRuntime } from "../loadapiatruntime/LoadApiAtRuntime";
 import { FormApiCall } from "../callapiwithparam/FormApiCall";
 import { UseReducerForm } from "../usereducer/UseReducerForm";
@@ -19,13 +20,14 @@ const routeMain = () =>
 
             <ES6 color="dark"/>
             <UseState color="light" />
-            <LoadApiAtRuntime color="dark" />
-            <FormApiCall color="light" />
-            <UseReducerForm color="dark" />
-            <MemoCallback color="light" />
-            <RouterSection color="dark" />
-            <Responsive color="light" />
-            <UseContext color="dark" />
+            <CrossComponentState color="dark"/>
+            <LoadApiAtRuntime color="light" />
+            <FormApiCall color="dark" />
+            <UseReducerForm color="light" />
+            <MemoCallback color="dark" />
+            <RouterSection color="light" />
+            <Responsive color="dark" />
+            <UseContext color="light" />
         </>
     } />
 

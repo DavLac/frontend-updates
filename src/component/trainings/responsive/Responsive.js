@@ -4,7 +4,11 @@ import { Section } from "../../element/section/Section";
 
 export const Responsive = (props) => {
   return (
-    <Section title="Responsive CSS" background={props.color} description='Madia queries with images, flex and grid CSS'>
+    <Section 
+      title="Responsive CSS" 
+      anchor="responsive-anchor"
+      background={props.color} 
+      description='Madia queries with images, flex and grid CSS'>
       <h4>Media query : image size change with screen width size</h4>
       <div className='media-query'></div>
 

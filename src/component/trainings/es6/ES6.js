@@ -21,6 +21,7 @@ export const ES6 = (props) => {
 
   return (
     <Section title="Javascript ES6 training" 
+      anchor="es6-anchor"
       background={props.color} 
       description='Run script with ES6 features'>
       <button type="button" onClick={onclickHandler}>

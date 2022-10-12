@@ -37,9 +37,10 @@ export const UseReducerForm = (props) => {
 
   return (
     <Section 
-    title="useReducer form with main input types - BEM CSS - flex" 
-    background={props.color}
-    description='Get big form with most common input types and display them + using BEM CSS with flex'>
+      title="useReducer form with main input types - BEM CSS - flex" 
+      anchor="form-anchor"
+      background={props.color}
+      description='Get big form with most common input types and display them + using BEM CSS with flex'>
       <form onSubmit={onSubmitHandler} className='form--flex'>
         <FormChild>
           <label htmlFor="cheese">Do you like cheese?</label>

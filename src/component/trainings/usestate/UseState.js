@@ -21,7 +21,10 @@ export const UseState = (props) => {
   }
 
   return (
-    <Section title="useState" background={props.color} description='Change component state on button click'>
+    <Section title="useState" 
+      anchor="state-anchor"
+      background={props.color} 
+      description='Change component state on button click'>
       <p style={titleStyle}>
         Hello world ({isValid ? 'isValid' : 'isNotValid'})
       </p>
