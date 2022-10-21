@@ -12,6 +12,7 @@ import { MemoCallback } from "../memocallback/MemoCallback";
 import { RouterSection } from "../router/RouterSection";
 import { Responsive } from "../responsive/Responsive";
 import { UseContext } from "../usecontext/UseContext";
+import { ReduxSection } from '../redux/ReduxSection';
 
 const routeMain = () =>
     <Route path={'/trainings'} exact element={
@@ -28,6 +29,7 @@ const routeMain = () =>
             <RouterSection color="light" />
             <Responsive color="dark" />
             <UseContext color="light" />
+            <ReduxSection color="dark" />
         </>
     } />
 

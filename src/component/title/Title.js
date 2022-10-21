@@ -11,7 +11,7 @@ const summaryTitles = [
   {title: "useReducer: manage big forms", anchor: "#form-anchor", color: "orange"},
   {title: "Router + useHistory", anchor: "#router-anchor", color: "green"},
   {title: "useContext", anchor: "#context-anchor", color: "green"},
-  {title: "Redux", color: "orange"},
+  {title: "Redux", anchor: "#redux-anchor", color: "orange"},
   {title: "Responsive CSS: media queries, flex and grid", anchor: "#responsive-anchor", color: "green"},
   {title: "Testing: Jest", color: "green"},
   {title: "Testing: Cypress", color: "green"}
