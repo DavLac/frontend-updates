@@ -15,15 +15,16 @@ const objectResponseToJsxList = (dataObject) => {
 const FetchApi = (props) => {
   const [activity, setActivity] = useState();
 
-  const getCallBackActivity = useCallback(() => {
+  const getCallBackActivity = useCallback(async () => {
     setActivity('Loading...');
     console.log("Loading data...");
-    BoredApiGateway.getActivity()
-        .then(res => setActivity(objectResponseToJsxList(res.data)))
-        .catch(error => setActivity(JSON.stringify(error)))
+    return await BoredApiGateway.getActivity();
   }, [activity]);
 
-  useEffect(() => getCallBackActivity(), [getCallBackActivity]);
+  useEffect(() => getCallBackActivity()
+      .then(res => setActivity(objectResponseToJsxList(res.data)))
+      .catch(error => setActivity(JSON.stringify(error))), 
+      [getCallBackActivity]);
 
   return (
     <div>Response {props.click} : <br/>{(activity) ? <>{activity}</> : null}</div>
