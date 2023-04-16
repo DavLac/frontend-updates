@@ -1,6 +1,6 @@
 
 import React, { useState, useCallback, useMemo } from 'react';
-import { Section } from "../../element/section/Section";
+import { Section } from "../../../element/section/Section";
 import BoredApiGateway from './http/BoredApiGateway';
 
 const objectResponseToJsxList = (dataObject) => {

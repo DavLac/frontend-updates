@@ -21,15 +21,15 @@ const runScript = () =>
     var f = 10;
     function myFunc() {
       var f = 20;
-      console.log(`inner func= ${f}`); // 20
+      console.log(`inner func= ${f}`); // 20 -> function scope
       function myFuncChild() {
         var f = 30;
-        console.log(`inner func child= ${f}`); // 30
+        console.log(`inner func child= ${f}`); // 30 -> function scope
       }
       myFuncChild();
     }
     myFunc();
-    console.log(`outer func= ${f}`); // 10
+    console.log(`outer func= ${f}`); // 10 -> global scope
 
     console.log("# LET and CONST");
     const o = 1; // Script scope

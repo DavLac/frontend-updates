@@ -1,6 +1,6 @@
 
 import React, { useRef, useState } from "react";
-import { Section } from "../../element/section/Section";
+import { Section } from "../../../element/section/Section";
 import GenderizeApiGateway from './http/GenderizeApiGateway';
 import Skeleton from '@mui/material/Skeleton';
 

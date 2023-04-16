@@ -1,6 +1,6 @@
 
 import React, {useState} from 'react';
-import { Section } from "../../element/section/Section";
+import { Section } from "../../../element/section/Section";
 import { Child } from "./Child";
 
 export const CrossComponentState = (props) => {

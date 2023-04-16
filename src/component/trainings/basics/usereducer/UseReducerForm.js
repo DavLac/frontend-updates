@@ -1,6 +1,6 @@
 
 import React, {useState} from 'react';
-import { Section } from "../../element/section/Section";
+import { Section } from "../../../element/section/Section";
 import { FormChild } from './FormChild';
 
 export const UseReducerForm = (props) => {

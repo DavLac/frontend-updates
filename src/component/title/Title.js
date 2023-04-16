@@ -8,6 +8,11 @@ const summaryTitles = [
     anchor: "#state-anchor",
     color: "green",
   },
+  {
+    title: "input text - on change",
+    anchor: "#inputevent-anchor",
+    color: "green",
+  },
   { title: "Clean event listener", color: "red" },
   {
     title: "Cross component state - child to parent",

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Section } from "../../element/section/Section";
+import { Section } from "../../../element/section/Section";
 
 export const Responsive = (props) => {
   return (

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Section } from "../../element/section/Section";
+import { Section } from "../../../element/section/Section";
 
 export const RouterSection = (props) => {
   const navigate = useNavigate();

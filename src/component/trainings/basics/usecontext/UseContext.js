@@ -1,6 +1,6 @@
 
 import React, {useState} from 'react';
-import { Section } from "../../element/section/Section";
+import { Section } from "../../../element/section/Section";
 import { Child1 } from "./Child1";
 import { Child2 } from "./Child2";
 import UserContext from './UserContext';
