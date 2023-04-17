@@ -37,11 +37,11 @@ const routeMain = () =>
             <LoadApiAtRuntime color="dark"/>
             <FormApiCall color="light"/>
             <UseReducerForm color="dark"/>
-            <MemoCallback color="light"/>
-            <RouterSection color="dark"/>
+            <UseContext color="light"/>
+            <MemoCallback color="dark"/>
+            <RouterSection color="light"/>
+            <ReduxSection color="dark"/>
             <Responsive color="light"/>
-            <UseContext color="dark"/>
-            <ReduxSection color="light"/>
         </>
     }/>
 

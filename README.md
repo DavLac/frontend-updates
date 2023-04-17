@@ -26,8 +26,8 @@ UI URL: `http://localhost:3000/`
 - useReducer: login example - same than previous but with reducer
 - useEffect: load API call at runtime + update on click
 - useState, submit form, API call with placeholder, map response with a class
-- React.memo, useMemo, useCallback
 - useReducer: manage big forms
+- React.memo, useMemo, useCallback
 - Router + useHistory
 - useContext
 - Redux
