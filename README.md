@@ -21,7 +21,8 @@ UI URL: `http://localhost:3000/`
 - useState: react to a button
 - input event onChange, managing multiple states
 - Cross component state - child to parent
-- useEffect: execute at runtime
+- useEffect no dependency: execute at runtime
+- useEffect with dependency: login example - run code at runtime and on each keystroke
 - useEffect: load API call at runtime + update on click
 - useState, submit form, API call with placeholder, map response with a class
 - React.memo, useMemo, useCallback

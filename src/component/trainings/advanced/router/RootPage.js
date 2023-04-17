@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom";
 export const RootPage = () => {
     const navigate = useNavigate();
 
-    // run when component is mounting
+    // run after 1st rendering
     useEffect(() => {
         navigate("/trainings");
     });

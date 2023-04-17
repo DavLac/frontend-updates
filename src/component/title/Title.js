@@ -25,8 +25,13 @@ const summaryTitles = [
     color: "green",
   },
   {
-    title: "useEffect: load API call at runtime + update on click",
+    title: "useEffect with dependency - login example - run code at runtime and on each keystroke",
     anchor: "#effect2-anchor",
+    color: "green",
+  },
+  {
+    title: "useEffect: load API call at runtime + update on click",
+    anchor: "#effect3-anchor",
     color: "green",
   },
   { title: "Clean API call", color: "red" },
@@ -70,15 +75,7 @@ export const Title = () => {
   return (
     <Section background="light">
       <h1 className="title, h1-main">Frontend training</h1>
-      <h2 class="subtitle">Summary</h2>
-
-      <span>Overall training progress : 10 ok, 3 in progress on 15</span>
-      <progress
-        class="progress is-success"
-        value="11.5"
-        max="15"
-        style={{ width: "400px", border: "1px black solid" }}
-      ></progress>
+      <h2 className="subtitle">Summary</h2>
       <ul>{generateSummaryTitles()}</ul>
     </Section>
   );
