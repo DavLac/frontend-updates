@@ -31,7 +31,7 @@ export const LoadApiAtRuntime = (props) => {
   return (
     <Section 
       title="useEffect/Load Api at runtime" 
-      anchor="effect-anchor" 
+      anchor="effect2-anchor"
       background={props.color} 
       description='Fetch and display GET api call (Axios) after 1st render + onClick 
       + read an object with for..in loop 

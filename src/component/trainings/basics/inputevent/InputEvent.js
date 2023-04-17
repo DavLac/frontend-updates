@@ -15,7 +15,7 @@ export const InputEvent = (props) => {
 
 
     return (
-        <Section title="inputEvent"
+        <Section title="Input event"
                  anchor="inputevent-anchor"
                  background={props.color}
                  description='Change component state on input change - managing multiple states properly'>

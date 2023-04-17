@@ -9,7 +9,7 @@ const summaryTitles = [
     color: "green",
   },
   {
-    title: "input text - on change",
+    title: "input event onChange, managing multiple states",
     anchor: "#inputevent-anchor",
     color: "green",
   },
@@ -20,8 +20,13 @@ const summaryTitles = [
     color: "green",
   },
   {
-    title: "useEffect: load API call at runtime",
-    anchor: "#effect-anchor",
+    title: "useEffect: execute at runtime",
+    anchor: "#effect1-anchor",
+    color: "green",
+  },
+  {
+    title: "useEffect: load API call at runtime + update on click",
+    anchor: "#effect2-anchor",
     color: "green",
   },
   { title: "Clean API call", color: "red" },

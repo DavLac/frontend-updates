@@ -19,8 +19,10 @@ UI URL: `http://localhost:3000/`
 
 - Last ES6 features
 - useState: react to a button
+- input event onChange, managing multiple states
 - Cross component state - child to parent
-- useEffect: load API call at runtime
+- useEffect: execute at runtime
+- useEffect: load API call at runtime + update on click
 - useState, submit form, API call with placeholder, map response with a class
 - React.memo, useMemo, useCallback
 - useReducer: manage big forms

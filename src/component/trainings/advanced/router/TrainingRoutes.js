@@ -15,6 +15,7 @@ import {UseContext} from "../../basics/usecontext/UseContext";
 import {ReduxSection} from '../redux/ReduxSection';
 import {RootPage} from "./RootPage";
 import {InputEvent} from "../../basics/inputevent/InputEvent";
+import {UseEffectNoDependency} from "../../basics/useeffectnodependency/UseEffectNoDependency";
 
 const routeRoot = () =>
     <Route path={'/'} exact element={<RootPage/>}/>
@@ -28,14 +29,15 @@ const routeMain = () =>
             <UseState color="light"/>
             <InputEvent color="dark"/>
             <CrossComponentState color="light"/>
-            <LoadApiAtRuntime color="dark"/>
-            <FormApiCall color="light"/>
-            <UseReducerForm color="dark"/>
-            <MemoCallback color="light"/>
-            <RouterSection color="dark"/>
-            <Responsive color="light"/>
-            <UseContext color="dark"/>
-            <ReduxSection color="light"/>
+            <UseEffectNoDependency color="dark"/>
+            <LoadApiAtRuntime color="light"/>
+            <FormApiCall color="dark"/>
+            <UseReducerForm color="light"/>
+            <MemoCallback color="dark"/>
+            <RouterSection color="light"/>
+            <Responsive color="dark"/>
+            <UseContext color="light"/>
+            <ReduxSection color="dark"/>
         </>
     }/>
 
