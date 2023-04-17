@@ -25,8 +25,13 @@ const summaryTitles = [
     color: "green",
   },
   {
-    title: "useEffect with dependency - login example - run code at runtime and on each keystroke",
+    title: "useEffect with dependency: login example - run code at runtime and on each keystroke",
     anchor: "#effect2-anchor",
+    color: "green",
+  },
+  {
+    title: "useReducer: login example - same than previous but with reducer",
+    anchor: "#reducer-anchor",
     color: "green",
   },
   {
@@ -34,21 +39,19 @@ const summaryTitles = [
     anchor: "#effect3-anchor",
     color: "green",
   },
-  { title: "Clean API call", color: "red" },
   {
-    title:
-      "useState, submit form, API call with placeholder, map response with a class",
+    title: "useReducer: manage big forms",
+    anchor: "#form-anchor",
+    color: "orange",
+  },
+  {
+    title: "useState, submit form, API call with placeholder, map response with a class",
     anchor: "#api-anchor",
     color: "green",
   },
   {
     title: "React.memo, useMemo, useCallback",
     anchor: "#memo-anchor",
-    color: "orange",
-  },
-  {
-    title: "useReducer: manage big forms",
-    anchor: "#form-anchor",
     color: "orange",
   },
   { title: "Router + useHistory", anchor: "#router-anchor", color: "green" },

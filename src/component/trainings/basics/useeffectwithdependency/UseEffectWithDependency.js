@@ -32,8 +32,16 @@ export const UseEffectWithDependency = (props) => {
         setLogin({...login, passwordValid: event.target.value.length >= 5});
     }
 
+    /*
+        instead of checking the form validity on each keystroke,
+        we check when the user stop to write after 500ms
+        setTimeout / clearTimeout
+     */
     useEffect(() => {
-        setLogin({...login, loginFormValid: !(login.mailValid && login.passwordValid)});
+        const id = setTimeout(() => {
+            setLogin({...login, loginFormValid: !(login.mailValid && login.passwordValid)});
+        }, 500);
+        return () => clearTimeout(id);
     }, [login.mailValid, login.passwordValid]);
 
     const handleClickLogin = () => {
@@ -53,7 +61,10 @@ export const UseEffectWithDependency = (props) => {
         <Section title="useEffect with dependency - login example"
                  anchor="effect2-anchor"
                  background={props.color}
-                 description='useEffect with dependency - login example - run code at runtime and on each keystroke'>
+                 description='useEffect with dependency - login example - run code at runtime and on each keystroke.
+                    Instead of checking the form validity on each keystroke,
+                    we check when the user stop to write after 500ms using cleanup function : setTimeout / clearTimeout'
+        >
             {
                 (!login.state)
                     ?

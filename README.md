@@ -23,6 +23,7 @@ UI URL: `http://localhost:3000/`
 - Cross component state - child to parent
 - useEffect no dependency: execute at runtime
 - useEffect with dependency: login example - run code at runtime and on each keystroke
+- useReducer: login example - same than previous but with reducer
 - useEffect: load API call at runtime + update on click
 - useState, submit form, API call with placeholder, map response with a class
 - React.memo, useMemo, useCallback

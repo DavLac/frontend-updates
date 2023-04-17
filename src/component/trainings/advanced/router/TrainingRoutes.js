@@ -17,6 +17,7 @@ import {RootPage} from "./RootPage";
 import {InputEvent} from "../../basics/inputevent/InputEvent";
 import {UseEffectNoDependency} from "../../basics/useeffectnodependency/UseEffectNoDependency";
 import {UseEffectWithDependency} from "../../basics/useeffectwithdependency/UseEffectWithDependency";
+import {UseReducerLogin} from "../../basics/usereducerlogin/UseReducerLogin";
 
 const routeRoot = () =>
     <Route path={'/'} exact element={<RootPage/>}/>
@@ -32,6 +33,7 @@ const routeMain = () =>
             <CrossComponentState color="light"/>
             <UseEffectNoDependency color="dark"/>
             <UseEffectWithDependency color="light"/>
+            <UseReducerLogin color="dark"/>
             <LoadApiAtRuntime color="dark"/>
             <FormApiCall color="light"/>
             <UseReducerForm color="dark"/>
