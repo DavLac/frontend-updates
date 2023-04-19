@@ -21,6 +21,7 @@ import {UseReducerLogin} from "../../basics/usereducerlogin/UseReducerLogin";
 import {ForwardRef} from "../../basics/forwardref/ForwardRef";
 import {Memo} from "../reactmemo/Memo";
 import {UseMemo} from "../memo/UseMemo";
+import {ErrorManagement} from "../errorboundary/ErrorManagement";
 
 const routeRoot = () =>
     <Route path={'/'} exact element={<RootPage/>}/>
@@ -40,7 +41,8 @@ const trainings = [
     <ForwardRef/>,
     <Memo/>,
     <UseCallback/>,
-    <UseMemo />,
+    <UseMemo/>,
+    <ErrorManagement />,
     <RouterSection/>,
     <ReduxSection/>,
     <Responsive/>
@@ -49,7 +51,9 @@ const trainings = [
 const generateSections = () => {
     let sections = [];
     trainings.forEach((section, index) => {
-        const clonedElementWithColor = addPropsToReactComponent(section, {color: (index % 2) ? "light" : "dark"});
+        const clonedElementWithColor = addPropsToReactComponent(section,
+            {color: (index % 2) ? "light" : "dark"}
+        );
         sections.push(clonedElementWithColor);
     })
     return <>{sections}</>

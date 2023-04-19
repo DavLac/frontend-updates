@@ -61,8 +61,13 @@ const summaryTitles = [
         color: "green",
     },
     {
-        title: "useMemo",
+        title: "React.memo with useMemo",
         anchor: "#usememo-anchor",
+        color: "green",
+    },
+    {
+        title: "Error boundary: react error management",
+        anchor: "#error-anchor",
         color: "green",
     },
     {title: "Router + useHistory", anchor: "#router-anchor", color: "green"},
