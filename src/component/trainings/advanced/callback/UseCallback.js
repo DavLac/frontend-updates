@@ -9,7 +9,8 @@ export const UseCallback = (props) => {
     const onHandleClickCallback = useCallback(() =>
         // this will return the same function
         // instance between re-renders
-        setIncrement(previousIncrement => previousIncrement + 1), []);
+        setIncrement(previousIncrement => previousIncrement + 1),
+        []); // no dependencies. Works like useEffect
 
     const onHandleClick = () => {
         setIncrement(previousIncrement => previousIncrement + 1)
@@ -21,6 +22,8 @@ export const UseCallback = (props) => {
             anchor="usecallback-anchor"
             background={props.color}
             description='useCallBack: check the logs to see what is re-rendered.
+            In JS, 2 same functions are not equal. (()=>{}) != (()=>{}).
+            Why we need useCallback when we pass a function as props with React.memo()
             When is this useful in React?
             Typically useCallback is helpful when passing callback props to highly optimised child components.
             For example, if a child component that accepts a callback relies on a referential equality check

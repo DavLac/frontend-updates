@@ -20,6 +20,7 @@ import {UseEffectWithDependency} from "../../basics/useeffectwithdependency/UseE
 import {UseReducerLogin} from "../../basics/usereducerlogin/UseReducerLogin";
 import {ForwardRef} from "../../basics/forwardref/ForwardRef";
 import {Memo} from "../reactmemo/Memo";
+import {UseMemo} from "../memo/UseMemo";
 
 const routeRoot = () =>
     <Route path={'/'} exact element={<RootPage/>}/>
@@ -39,6 +40,7 @@ const trainings = [
     <ForwardRef/>,
     <Memo/>,
     <UseCallback/>,
+    <UseMemo />,
     <RouterSection/>,
     <ReduxSection/>,
     <Responsive/>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SubComponentMemoizedCallback = (props) => {
-    console.log("Render SubComponent1");
+    console.log("Render SubComponentMemoizedCallback");
     return (
         <button type={"button"} onClick={props.handleClick}>Add with useCallback</button>
     );
