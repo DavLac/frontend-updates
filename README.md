@@ -30,7 +30,8 @@ UI URL: `http://localhost:3000/`
 - useContext
 - forwardRef: give ref to child
 - React.memo: don't call API if same param
-- useMemo, useCallback
+- React.memo with useCallback
+- useMemo
 - Router + useHistory
 - Redux
 - Responsive CSS: media queries, flex and grid

@@ -52,13 +52,18 @@ const summaryTitles = [
     {title: "forwardRef", anchor: "#forward-anchor", color: "green"},
     {
         title: "React.memo: not call API if same param",
-        anchor: "#memo-anchor",
+        anchor: "#reactmemo-anchor",
+        color: "green",
+    },
+    {
+        title: "React.memo with useCallback",
+        anchor: "#usecallback-anchor",
         color: "green",
     },
     {
         title: "useMemo",
         anchor: "#usememo-anchor",
-        color: "orange",
+        color: "green",
     },
     {title: "Router + useHistory", anchor: "#router-anchor", color: "green"},
     {title: "Redux", anchor: "#redux-anchor", color: "orange"},

@@ -8,7 +8,7 @@ import {CrossComponentState} from "../../basics/crosscomponentstate/CrossCompone
 import {LoadApiAtRuntime} from "../../basics/loadapiatruntime/LoadApiAtRuntime";
 import {FormApiCall} from "../../basics/callapiwithparam/FormApiCall";
 import {UseReducerForm} from "../../basics/usereducer/UseReducerForm";
-import {MemoCallback} from "../memocallback/MemoCallback";
+import {UseCallback} from "../callback/UseCallback";
 import {RouterSection} from "./RouterSection";
 import {Responsive} from "../../css/responsive/Responsive";
 import {UseContext} from "../../basics/usecontext/UseContext";
@@ -19,7 +19,7 @@ import {UseEffectNoDependency} from "../../basics/useeffectnodependency/UseEffec
 import {UseEffectWithDependency} from "../../basics/useeffectwithdependency/UseEffectWithDependency";
 import {UseReducerLogin} from "../../basics/usereducerlogin/UseReducerLogin";
 import {ForwardRef} from "../../basics/forwardref/ForwardRef";
-import {Memo} from "../memo/Memo";
+import {Memo} from "../reactmemo/Memo";
 
 const routeRoot = () =>
     <Route path={'/'} exact element={<RootPage/>}/>
@@ -38,7 +38,7 @@ const trainings = [
     <UseContext/>,
     <ForwardRef/>,
     <Memo/>,
-    <MemoCallback/>,
+    <UseCallback/>,
     <RouterSection/>,
     <ReduxSection/>,
     <Responsive/>

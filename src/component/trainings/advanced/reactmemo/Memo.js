@@ -14,7 +14,7 @@ export const Memo = (props) => {
     return (
         <Section
             title="React.memo: memoized API call"
-            anchor="memo-anchor"
+            anchor="reactmemo-anchor"
             background={props.color}
             description='React.memo: do not update child component (call API) if props are the same.
             /!\ do not put React.memo all the time, it costs resources'
