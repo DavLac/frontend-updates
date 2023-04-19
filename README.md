@@ -29,7 +29,8 @@ UI URL: `http://localhost:3000/`
 - useReducer: manage big forms
 - useContext
 - forwardRef: give ref to child
-- React.memo, useMemo, useCallback
+- React.memo: don't call API if same param
+- useMemo, useCallback
 - Router + useHistory
 - Redux
 - Responsive CSS: media queries, flex and grid

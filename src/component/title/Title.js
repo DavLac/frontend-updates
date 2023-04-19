@@ -48,14 +48,19 @@ const summaryTitles = [
         anchor: "#form-anchor",
         color: "orange",
     },
+    {title: "useContext", anchor: "#context-anchor", color: "green"},
+    {title: "forwardRef", anchor: "#forward-anchor", color: "green"},
     {
-        title: "React.memo, useMemo, useCallback",
+        title: "React.memo: not call API if same param",
         anchor: "#memo-anchor",
+        color: "green",
+    },
+    {
+        title: "useMemo",
+        anchor: "#usememo-anchor",
         color: "orange",
     },
     {title: "Router + useHistory", anchor: "#router-anchor", color: "green"},
-    {title: "useContext", anchor: "#context-anchor", color: "green"},
-    {title: "forwardRef", anchor: "#forward-anchor", color: "green"},
     {title: "Redux", anchor: "#redux-anchor", color: "orange"},
     {title: "Progressive image loading", color: "red",},
     {

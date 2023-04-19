@@ -42,7 +42,7 @@ export const MemoCallback = (props) => {
   return (
     <Section 
       title="React.memo, useCallBack and useMemo" 
-      anchor="memo-anchor"
+      anchor="usememo-anchor"
       background={props.color}
       description='React.memo, useCallBack and useMemo'
     >

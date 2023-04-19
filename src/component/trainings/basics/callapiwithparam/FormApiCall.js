@@ -69,7 +69,7 @@ export const FormApiCall = (props) => {
         <button type="submit" disabled={!formValid}>Get gender</button>
       </form>
       <br/>
-      <div>Response : <br/>{(genderResponse) ? <>{genderResponse}</> : null}</div>
+      <div>Response : <br/>{(genderResponse) &&<>{genderResponse}</>}</div>
     </Section>
   );
 };

@@ -19,6 +19,7 @@ import {UseEffectNoDependency} from "../../basics/useeffectnodependency/UseEffec
 import {UseEffectWithDependency} from "../../basics/useeffectwithdependency/UseEffectWithDependency";
 import {UseReducerLogin} from "../../basics/usereducerlogin/UseReducerLogin";
 import {ForwardRef} from "../../basics/forwardref/ForwardRef";
+import {Memo} from "../memo/Memo";
 
 const routeRoot = () =>
     <Route path={'/'} exact element={<RootPage/>}/>
@@ -36,6 +37,7 @@ const trainings = [
     <UseReducerForm/>,
     <UseContext/>,
     <ForwardRef/>,
+    <Memo/>,
     <MemoCallback/>,
     <RouterSection/>,
     <ReduxSection/>,
