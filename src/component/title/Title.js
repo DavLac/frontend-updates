@@ -55,6 +55,7 @@ const summaryTitles = [
     },
     {title: "Router + useHistory", anchor: "#router-anchor", color: "green"},
     {title: "useContext", anchor: "#context-anchor", color: "green"},
+    {title: "forwardRef", anchor: "#forward-anchor", color: "green"},
     {title: "Redux", anchor: "#redux-anchor", color: "orange"},
     {title: "Progressive image loading", color: "red",},
     {

@@ -27,9 +27,10 @@ UI URL: `http://localhost:3000/`
 - useEffect: load API call at runtime + update on click
 - useState, submit form, API call with placeholder, map response with a class
 - useReducer: manage big forms
+- useContext
+- forwardRef: give ref to child
 - React.memo, useMemo, useCallback
 - Router + useHistory
-- useContext
 - Redux
 - Responsive CSS: media queries, flex and grid
 - Testing: Jest

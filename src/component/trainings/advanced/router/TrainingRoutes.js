@@ -18,30 +18,51 @@ import {InputEvent} from "../../basics/inputevent/InputEvent";
 import {UseEffectNoDependency} from "../../basics/useeffectnodependency/UseEffectNoDependency";
 import {UseEffectWithDependency} from "../../basics/useeffectwithdependency/UseEffectWithDependency";
 import {UseReducerLogin} from "../../basics/usereducerlogin/UseReducerLogin";
+import {ForwardRef} from "../../basics/forwardref/ForwardRef";
 
 const routeRoot = () =>
     <Route path={'/'} exact element={<RootPage/>}/>
+
+const trainings = [
+    <ES6/>,
+    <UseState/>,
+    <InputEvent/>,
+    <CrossComponentState/>,
+    <UseEffectNoDependency/>,
+    <UseEffectWithDependency/>,
+    <UseReducerLogin/>,
+    <LoadApiAtRuntime/>,
+    <FormApiCall/>,
+    <UseReducerForm/>,
+    <UseContext/>,
+    <ForwardRef/>,
+    <MemoCallback/>,
+    <RouterSection/>,
+    <ReduxSection/>,
+    <Responsive/>
+]
+
+const generateSections = () => {
+    let sections = [];
+    trainings.forEach((section, index) => {
+        const clonedElementWithColor = addPropsToReactComponent(section, {color: (index % 2) ? "light" : "dark"});
+        sections.push(clonedElementWithColor);
+    })
+    return <>{sections}</>
+}
+
+const addPropsToReactComponent = (component, props) => {
+    return React.cloneElement(
+        component,
+        props
+    );
+}
 
 const routeMain = () =>
     <Route path={'/trainings'} exact element={
         <>
             <Title/>
-
-            <ES6 color="dark"/>
-            <UseState color="light"/>
-            <InputEvent color="dark"/>
-            <CrossComponentState color="light"/>
-            <UseEffectNoDependency color="dark"/>
-            <UseEffectWithDependency color="light"/>
-            <UseReducerLogin color="dark"/>
-            <LoadApiAtRuntime color="dark"/>
-            <FormApiCall color="light"/>
-            <UseReducerForm color="dark"/>
-            <UseContext color="light"/>
-            <MemoCallback color="dark"/>
-            <RouterSection color="light"/>
-            <ReduxSection color="dark"/>
-            <Responsive color="light"/>
+            {generateSections()}
         </>
     }/>
 
