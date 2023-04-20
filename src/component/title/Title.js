@@ -70,6 +70,11 @@ const summaryTitles = [
         anchor: "#error-anchor",
         color: "green",
     },
+    {
+        title: "Call API with fetch",
+        anchor: "#fetchapi-anchor",
+        color: "green",
+    },
     {title: "Router + useHistory", anchor: "#router-anchor", color: "green"},
     {title: "Redux", anchor: "#redux-anchor", color: "orange"},
     {title: "Progressive image loading", color: "red",},

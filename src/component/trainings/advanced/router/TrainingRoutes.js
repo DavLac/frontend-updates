@@ -3,7 +3,6 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import {NotFound} from "./NotFound";
 import {Title} from "../../../title/Title";
 import {ES6} from "../../es6/ES6";
-import {UseState} from "../../basics/usestate/UseState";
 import {CrossComponentState} from "../../basics/crosscomponentstate/CrossComponentState";
 import {LoadApiAtRuntime} from "../../basics/loadapiatruntime/LoadApiAtRuntime";
 import {FormApiCall} from "../../basics/callapiwithparam/FormApiCall";
@@ -22,6 +21,8 @@ import {ForwardRef} from "../../basics/forwardref/ForwardRef";
 import {Memo} from "../reactmemo/Memo";
 import {UseMemo} from "../memo/UseMemo";
 import {ErrorManagement} from "../errorboundary/ErrorManagement";
+import {CallApiFetch} from "../../basics/callapifetch/CallApiFetch";
+import {UseState} from "../../basics/usestate/UseState";
 
 const routeRoot = () =>
     <Route path={'/'} exact element={<RootPage/>}/>
@@ -43,6 +44,7 @@ const trainings = [
     <UseCallback/>,
     <UseMemo/>,
     <ErrorManagement />,
+    <CallApiFetch/>,
     <RouterSection/>,
     <ReduxSection/>,
     <Responsive/>
