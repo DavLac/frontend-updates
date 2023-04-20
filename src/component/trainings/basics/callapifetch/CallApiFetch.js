@@ -39,10 +39,10 @@ export const CallApiFetch = (props) => {
     }
 
     return (
-        <Section title="Call API with fetch"
+        <Section title="Call API with fetch + async/await"
                  anchor="fetchapi-anchor"
                  background={props.color}
-                 description='Call API with built-in fetch function'>
+                 description='Call API with built-in fetch function + async/await'>
             <button type="button" onClick={onclickHandler}>
                 Call Star Wars API
             </button>

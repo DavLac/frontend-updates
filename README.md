@@ -33,7 +33,7 @@ UI URL: `http://localhost:3000/`
 - React.memo with useCallback
 - React.memo with useMemo
 - Class component and ErrorBoundary
-- Call API with fetch
+- Call API with fetch + async/await
 - Router + useHistory
 - Redux
 - Responsive CSS: media queries, flex and grid

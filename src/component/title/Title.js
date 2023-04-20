@@ -71,7 +71,7 @@ const summaryTitles = [
         color: "green",
     },
     {
-        title: "Call API with fetch",
+        title: "Call API with fetch + async/await",
         anchor: "#fetchapi-anchor",
         color: "green",
     },
