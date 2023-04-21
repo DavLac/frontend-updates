@@ -6,7 +6,7 @@ import {ES6} from "../../es6/ES6";
 import {CrossComponentState} from "../../basics/crosscomponentstate/CrossComponentState";
 import {LoadApiAtRuntime} from "../../basics/loadapiatruntime/LoadApiAtRuntime";
 import {FormApiCall} from "../../basics/callapiwithparam/FormApiCall";
-import {UseReducerForm} from "../../basics/usereducer/UseReducerForm";
+import {UseReducerForm} from "../../basics/usereducerform/UseReducerForm";
 import {UseCallback} from "../callback/UseCallback";
 import {RouterSection} from "./RouterSection";
 import {Responsive} from "../../css/responsive/Responsive";

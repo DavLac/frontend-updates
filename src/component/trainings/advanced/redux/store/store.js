@@ -1,4 +1,5 @@
-const redux = require('redux');
+import {createStore} from "redux";
+
 
 const defaultInitialState = {
     counter1: 0,
@@ -6,19 +7,18 @@ const defaultInitialState = {
 };
 
 const counterReducer = (state = defaultInitialState, action) => {
-    return {
-        counter1: state.counter1 + 1,
-        counter2: state.counter2 + 1
+    if (action.type === "increment") {
+        return {
+            counter1: state.counter1 + 1,
+            counter2: state.counter2 + 1
+        }
+    } else if (action.type === "decrement") {
+        //...
+    } else {
+        return state;
     }
 }
 
-const store = redux.createStore(counterReducer);
+const store = createStore(counterReducer);
 
-const counterSubscriber = () => {
-    const latestState = store.getState();
-    console.log(latestState);
-}
-
-store.subscribe(counterSubscriber);
-store.dispatch({ type: 'increment'});
-store.dispatch({ type: 'increment'});
+export default store;
