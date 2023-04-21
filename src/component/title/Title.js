@@ -76,7 +76,7 @@ const summaryTitles = [
         color: "green",
     },
     {title: "Router + useHistory", anchor: "#router-anchor", color: "green"},
-    {title: "Redux", anchor: "#redux-anchor", color: "orange"},
+    {title: "Redux", anchor: "#reduxbasic-anchor", color: "green"},
     {title: "Progressive image loading", color: "red",},
     {
         title: "Responsive CSS: media queries, flex and grid",

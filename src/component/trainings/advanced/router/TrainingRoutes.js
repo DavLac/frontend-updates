@@ -11,7 +11,7 @@ import {UseCallback} from "../callback/UseCallback";
 import {RouterSection} from "./RouterSection";
 import {Responsive} from "../../css/responsive/Responsive";
 import {UseContext} from "../../basics/usecontext/UseContext";
-import {ReduxSection} from '../redux/ReduxSection';
+import {BasicRedux} from '../reduxbasic/BasicRedux';
 import {RootPage} from "./RootPage";
 import {InputEvent} from "../../basics/inputevent/InputEvent";
 import {UseEffectNoDependency} from "../../basics/useeffectnodependency/UseEffectNoDependency";
@@ -46,7 +46,7 @@ const trainings = [
     <ErrorManagement />,
     <CallApiFetch/>,
     <RouterSection/>,
-    <ReduxSection/>,
+    <BasicRedux/>,
     <Responsive/>
 ]
 
