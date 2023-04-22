@@ -1,34 +1,6 @@
-import {configureStore, createSlice} from "@reduxjs/toolkit";
-
-const counter3Slice = createSlice({
-    name: "counter3",
-    initialState: {
-        counter3: 0
-    },
-    reducers: {
-        decrement(state) {
-            state.counter3--
-        },
-        increaseByValue(state, action) {
-            state.counter3 += action.payload.value
-        }
-    }
-});
-
-const counter4Slice = createSlice({
-    name: "counter4",
-    initialState: {
-        counter4: 0
-    },
-    reducers: {
-        increment(state) {
-            state.counter4++
-        },
-        decreaseByValue(state, action) {
-            state.counter4 -= action.payload
-        }
-    }
-});
+import {configureStore} from "@reduxjs/toolkit";
+import {counter3Slice} from "./counter3-slice";
+import {counter4Slice} from "./counter4-slice";
 
 const store = configureStore({
     reducer: {

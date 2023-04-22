@@ -76,7 +76,7 @@ const summaryTitles = [
         color: "green",
     },
     {title: "Router + useHistory", anchor: "#router-anchor", color: "green"},
-    {title: "Redux: basic (disabled because only 1 store allowed)", anchor: "#reduxbasic-anchor", color: "green"},
+    {title: "Redux: basic (disabled because only 1 store allowed)", anchor: "#reduxbasic-anchor", color: "grey"},
     {title: "Redux toolkit: managing multiple slices", anchor: "#reduxslice-anchor", color: "green"},
     {title: "Progressive image loading", color: "red",},
     {
