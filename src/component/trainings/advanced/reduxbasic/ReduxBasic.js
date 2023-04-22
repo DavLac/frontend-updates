@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {Actions} from "./store/store";
 
 
-export const BasicRedux = (props) => {
+export const ReduxBasic = (props) => {
 
     const dispatch = useDispatch();
     const storedCounter = useSelector(state => state);
@@ -13,7 +13,7 @@ export const BasicRedux = (props) => {
     }
 
     const onClickHandler2 = () => {
-        dispatch({type: Actions.increment2});
+        dispatch({type: Actions.increment2, value: 5});
     }
 
     return (

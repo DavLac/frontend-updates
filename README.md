@@ -35,7 +35,8 @@ UI URL: `http://localhost:3000/`
 - Class component and ErrorBoundary
 - Call API with fetch + async/await
 - Router + useHistory
-- Redux
+- Redux: basic counter
+- Redux toolkit: managing multiple slices
 - Responsive CSS: media queries, flex and grid
 - Testing: Jest
 - Testing: Cypress

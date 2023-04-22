@@ -13,19 +13,19 @@ const defaultInitialState = {
 const counterReducer = (state = defaultInitialState, action) => {
     if (action.type === Actions.increment1) {
         return {
+            ...state,
             counter1: state.counter1 + 1,
-            counter2: state.counter2
         }
     } else if (action.type === Actions.increment2) {
         return {
-            counter1: state.counter1,
-            counter2: state.counter2 + 1
+            ...state,
+            counter2: state.counter2 + action.value
         }
     } else {
         return state;
     }
 }
 
-const store = createStore(counterReducer);
+//const store = createStore(counterReducer);
 
-export default store;
+//export default store;

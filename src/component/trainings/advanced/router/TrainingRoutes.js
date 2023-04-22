@@ -11,7 +11,7 @@ import {UseCallback} from "../callback/UseCallback";
 import {RouterSection} from "./RouterSection";
 import {Responsive} from "../../css/responsive/Responsive";
 import {UseContext} from "../../basics/usecontext/UseContext";
-import {BasicRedux} from '../reduxbasic/BasicRedux';
+import {ReduxBasic} from '../reduxbasic/ReduxBasic';
 import {RootPage} from "./RootPage";
 import {InputEvent} from "../../basics/inputevent/InputEvent";
 import {UseEffectNoDependency} from "../../basics/useeffectnodependency/UseEffectNoDependency";
@@ -23,6 +23,7 @@ import {UseMemo} from "../memo/UseMemo";
 import {ErrorManagement} from "../errorboundary/ErrorManagement";
 import {CallApiFetch} from "../../basics/callapifetch/CallApiFetch";
 import {UseState} from "../../basics/usestate/UseState";
+import {ReduxToolkitMultipleSlice} from "../reduxtoolkit/ReduxToolkitMultipleSlice";
 
 const routeRoot = () =>
     <Route path={'/'} exact element={<RootPage/>}/>
@@ -46,7 +47,8 @@ const trainings = [
     <ErrorManagement />,
     <CallApiFetch/>,
     <RouterSection/>,
-    <BasicRedux/>,
+    //<ReduxBasic/>,
+    <ReduxToolkitMultipleSlice/>,
     <Responsive/>
 ]
 
