@@ -2,6 +2,16 @@ const runScript = () =>
   new Promise((success) => {
     console.log("------------------ EXECUTING ES6 SCRIPT ------------------");
 
+      // -----------------------------------------------------------------------------
+      console.log(
+          "\n### Equality ----------------------------------------------------"
+      );
+
+      const myVarInt = 2;
+      const myVarString = "2";
+      console.log(myVarInt == myVarString); // true - check values
+      console.log(myVarInt === myVarString); // false - check values and type
+
     // -----------------------------------------------------------------------------
     console.log(
       "\n### Block visibility ----------------------------------------------------"
@@ -458,7 +468,7 @@ const runScript = () =>
 
       // -----------------------------------------------------------------------------
       console.log(
-        "\n### Promise.race : timeout ----------------------------------------------------"
+        "\n### Promise.race : 1st call to finish wins. A way to put a timeout to a call ----------------------------------------------------"
       );
       const p1Call = (id, duration) =>
         new Promise((resolve) => {

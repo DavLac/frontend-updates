@@ -14,11 +14,11 @@ export const UseEffectNoDependency = (props) => {
     }, []);
 
     const renderMyText = () => {
-        let rows = [];
-        myText.forEach((value, index) => {
-            rows.push(<li key={index}>{value}</li>);
-        });
-        return <ol>{rows}</ol>;
+        return <ol>{
+            myText.map((value, index) =>
+                <li key={index}>{value}</li>
+            )
+        }</ol>;
     }
 
     return (

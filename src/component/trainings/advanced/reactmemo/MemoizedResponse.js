@@ -12,17 +12,15 @@ class GenderResponse {
 }
 
 const objectResponseToJsxList = (genderResponse) => {
-    let rows = [];
-    let index = 0;
-    for (const [key, value] of Object.entries(genderResponse)) {
-        rows.push(<li key={index}>{key} : {value}</li>);
-        index++;
-    }
-    return <ul>{rows}</ul>;
+    return <ul>
+        {Object.entries(genderResponse).map(([key, value], index) =>
+            <li key={index++}>{key} : {value}</li>)
+        }
+    </ul>;
 }
 
 const getFieldSkeleton = () => <Skeleton variant="rectangular" width={50} height={15}
-                                        style={{display: "inline-block"}}/>;
+                                         style={{display: "inline-block"}}/>;
 
 const generatePlaceholder = () => {
     return <ul>
@@ -38,7 +36,7 @@ const MemoizedResponse = (props) => {
     const [genderResponse, setGenderResponse] = useState();
 
     useEffect(() => {
-        if(props.name !== "") {
+        if (props.name !== "") {
             setGenderResponse(generatePlaceholder());
             GenderizeApiGateway.getGenderByName(props.name)
                 .then(response => setGenderResponse(
